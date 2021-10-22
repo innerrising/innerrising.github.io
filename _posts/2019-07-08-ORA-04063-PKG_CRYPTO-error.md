@@ -30,4 +30,4 @@ grant execute on dbms_obfuscation_toolki to 계정명;
 그 다음 해당 계정으로 들어가서 PKG_CRYPTO BODY를 리컴파일한다. 
 저게 안 돼서 며칠 째 고생했는데 이제야 권한이 제대로 들어간다.(흡족)
 
-- 끗 -
+&#45; 끗 &#45;
