@@ -1,5 +1,5 @@
-title: Your awesome title
-author: GitHub User
+title: 혼종개발자
+author: 각인
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
@@ -27,7 +27,7 @@ plainwhite:
   # generate social links in footer
   social_links:
     twitter: samarsault
-    github:  samarsault
+    github:  innerrising
     linkedIn: in/samarsault
     #dribbble: jekyll
     #flickr:   jekyll
@@ -58,3 +58,7 @@ theme: plainwhite
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+
+cotegory_dir: category/
+tag_dir: tag/
+
