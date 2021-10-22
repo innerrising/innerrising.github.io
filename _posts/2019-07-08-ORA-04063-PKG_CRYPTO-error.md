@@ -13,14 +13,14 @@ CRYPTO 라는 녀석이 암호화 해주는 유틸인 것 같은데 권한이 �
 
 3. 아래 명령어를 통해 권한을 부여한다.
 
-\*\*public 권한 부여\*\*
+**public 권한 부여**
 ```
 grant execute on dbms_crypto to public;
 
 grant execute on dbms_obfuscation_toolkit to public;
 ```
 
-\*\*계정 권한 부여\*\*
+**계정 권한 부여**
 ```
 grant execute on dbms_crypto to 계정명;
 
