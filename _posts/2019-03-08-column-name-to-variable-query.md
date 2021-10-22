@@ -6,7 +6,7 @@ categories: Java Oracle
 ---
 컬럼명 : USER_NM
 
-```
+```sql
 LOWER(SUBSTR('USER_NM',0,1)) || SUBSTR(REPLACE(INITCAP ('USER_NM'),'_',''), 2) 
 ```
 
