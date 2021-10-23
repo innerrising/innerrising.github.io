@@ -2,6 +2,7 @@
 layout: post
 comments: true
 title: "http통신"
+categories: Language
 tags: Java
 ---
 

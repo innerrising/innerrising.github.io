@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "SQL Developer 에서 오라클 12c 접속 안 될 때"
 date:   2019-12-11 10:49:00 -0000
+categories: SQL
 tags: Oracle
 ---
 

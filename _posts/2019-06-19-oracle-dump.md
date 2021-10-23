@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "오라클 DB 덤프(dump)"
 date:   2019-06-19 00:26:00 -0000
+categories: SQL
 tags: Oracle
 ---
 

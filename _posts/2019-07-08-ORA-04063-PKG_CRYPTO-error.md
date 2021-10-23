@@ -3,6 +3,7 @@ layout: post
 comments: true
 title: "ORA-04063 : package body \"PKG_CRYPTO\"에 오류가 있습니다."
 date:   2019-03-08 00:26:00 -0000
+categories: SQL
 tags: Oracle
 ---
 CRYPTO 라는 녀석이 암호화 해주는 유틸인 것 같은데 권한이 없으면 오류난다.
