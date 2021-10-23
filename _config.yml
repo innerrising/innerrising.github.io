@@ -1,6 +1,6 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
+title: 각인
+description: 다른 필드에서 넘어 온 글쓰기, 게임 좋아하는 개발자
 url: https://innrrisng.github.io
 avatar: /avatar.jpeg
 paginate: 5
@@ -50,7 +50,7 @@ sass:
 # google_analytics: UA-000000-0
 
 # Replace this value and uncomment to enable Disqus
-# disqus: xxxxxx
+disqus: innerrising-github-io
 
 # Specify the author for blog posts
 author:

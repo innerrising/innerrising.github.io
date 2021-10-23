@@ -1,7 +1,8 @@
 ---
 layout: post
+comments: true
 title: "http통신"
-categories: Java
+tags: Java
 ---
 
 **POST 방식**

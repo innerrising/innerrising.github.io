@@ -1,8 +1,9 @@
 ---
 layout: post
+comments: true
 title: "SQL Developer 에서 오라클 12c 접속 안 될 때"
 date:   2019-12-11 10:49:00 -0000
-categories: Oracle
+tags: Oracle
 ---
 
 SQL Developer 폴더 밑에 jdbc 폴더를 들어가보면 ojdbc8 로 돼 있을 것이다. 
