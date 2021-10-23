@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "컬럼명을 자바 변수명으로 바꿔주는 쿼리"
 date:   2019-03-08 00:26:00 -0000
 categories: Java Oracle
