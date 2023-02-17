@@ -5,7 +5,7 @@ title: "C#에서 오라클 DB 연동"
 comments: true
 date:   2019-03-08 00:17:00 -0000
 categories: Language
-tags: Csharp Oracle
+tags: Csharp Oracle 
 ---
 간단하게 설정하겠다.
 

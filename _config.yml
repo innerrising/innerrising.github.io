@@ -14,7 +14,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-sitemap
+  - jekyll-sitemap 
 
 # Optimize Jekyll
 exclude:
@@ -39,7 +39,10 @@ social:
     - https://twitter.com/vszhub
     - https://github.com/vszhub
 google_site_verification: xxxxx
+<<<<<<< HEAD
+=======
 lang: ko
+>>>>>>> 7d48a812e970af81eff414ff304841568611fd33
 
 sass:
   sass_dir: _sass
