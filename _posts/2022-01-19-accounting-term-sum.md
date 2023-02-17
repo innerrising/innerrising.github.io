@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "전산회계 용어 정리"
 date:   2022-01-19 15:28:00 -0000 
-categories: 자격증
+categories: Cert
 tags: 전산회계
 lang: ko
 ---
