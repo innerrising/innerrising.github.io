@@ -31,9 +31,9 @@
 @import "toc";
 @import "alignment";
 
-@import "syntax-light";
+@import "syntax-dark";
 @media (prefers-color-scheme: dark) {
-  @import "syntax-dark";
+  @import "syntax-light";
 }
 
 // Sass for creating the swatches
