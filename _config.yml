@@ -51,7 +51,9 @@ sass:
 # google_analytics: UA-000000-0
 
 # Replace this value and uncomment to enable Disqus
-disqus: innerrising-github-io
+disqus: 
+  comments: true 
+  shortname: innerrising
 
 # Specify the author for blog posts
 author:

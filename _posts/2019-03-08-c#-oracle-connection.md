@@ -1,7 +1,8 @@
 ---
 layout: post
-comments: true
+
 title: "C#에서 오라클 DB 연동"
+comments: true
 date:   2019-03-08 00:17:00 -0000
 categories: Language
 tags: Csharp Oracle

@@ -50,6 +50,7 @@ layout: default
 </aside>
 {% endif %}
 
- 
-    {% include disqus.html %}
+{% if page.comments %}
+  {% include disqus.html %}
+{% endif %}
  
