@@ -1,106 +1,123 @@
-<div align="center">
+# Hydejack
+[![Gem Version](https://badge.fury.io/rb/jekyll-theme-hydejack.svg)](https://badge.fury.io/rb/jekyll-theme-hydejack)
 
-  # Chirpy Jekyll Theme
+**Hydejack** is a Jekyll theme with JavaScript powers, combining the best of static sites and modern web apps.
+It features a suite of JavaScript that makes the page feel like an app, without sacrificing backwards-compatibility,
+page-load speed or SEO.
 
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+> Your presence on the web — A [blog], a [portfolio] and a [resume].
 
-  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)
-  [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml)
-  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)](https://www.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cotes2020/jekyll-theme-chirpy&amp;utm_campaign=Badge_Grade)
-  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
-  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
+**Hydejack** aims to be the complete package for professionals on the web.
+It features a blog suitable for both prose and technical documentation,
+a showcase for your projects, and a resume that fits with the rest of the design.
 
-  [**Live Demo →**](https://cotes2020.github.io/chirpy-demo)
+![Screenshot](https://qwtel.com/assets/img/projects/default.jpg)
 
-  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)](https://cotes2020.github.io/chirpy-demo)
-
-</div>
+## Demo
+It's best to just [see it in action](https://qwtel.com/hydejack/).
 
 ## Features
+Both versions include these features:
 
-- Dark/Light Theme Mode
-- Localized UI language
-- Pinned Posts
-- Hierarchical Categories
-- Trending Tags
-- Table of Contents
-- Last Modified Date of Posts
-- Syntax Highlighting
-- Mathematical Expressions
-- Mermaid Diagram & Flowchart
-- Dark/Light Mode Images
-- Embed Videos
-- Disqus/Utterances/Giscus Comments
-- Search
-- Atom Feeds
-- Google Analytics
-- Page Views Reporting
-- SEO & Performance Optimization
-
-## Quick Start
-
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of the basic environment. [Git](https://git-scm.com/) also needs to be installed.
-
-### Step 1. Creating a New Site
-
-Sign in to GitHub and browse to [**Chirpy Starter**](https://github.com/cotes2020/chirpy-starter/), click the button <kbd>Use this template</kbd> > <kbd>Create a new repository</kbd>, and name the new repository `USERNAME.github.io`, where `USERNAME` represents your GitHub username.
-
-### Step 2. Installing Dependencies
-
-Clone it to your local machine, go to its root directory, and run the following command to install the dependencies. 
-
-```console
-$ bundle
-```
-
-### Step 3. Running Local Server
-
-Run the following command in the root directory of your site:
-
-```console
-$ bundle exec jekyll s
-```
-
-Or run with Docker:
-
-```console
-$ docker run -it --rm \
-    --volume="$PWD:/srv/jekyll" \
-    -p 4000:4000 jekyll/jekyll \
-    jekyll serve
-```
-
-After a few seconds, the local service will be published at _<http://127.0.0.1:4000>_.
+* Full in-app page loading, powered by [hy-push-state]
+* A customizable sidebar that turns into a drawer menu on mobile, powered by [hy-drawer]
+* Advanced FLIP animations, inspired by Material Design
+* Good [Google PageSpeed Score][gpss][^3]
+* Higher *perceived speed* thanks to content pre-fetching
+* [Syntax highlighting][syntax], powered by [Rouge]
+* [LaTeX math blocks][latex], powered by [KaTeX]
+* Change the wording of built-in strings and possibly translate in other languages
+* Support for categories and tags
+* Built-in icons for many social networks
+* Simple and semantic HTML — can be viewed even with text-based browsers
+* Author section below each article and support for multiple authors
+* Progressive enhancement — sacrifice features, not content
+* Google Analytics and Google Fonts support
+* Disqus comments
+* Print layout — Used to render Hydejack's [PDF documentation][pdf]
+* Blog layout via `jekyll-paginate` (optional)
+* SEO meta tags via `jekyll-seo-tag` (optional)
+* Github avatars via `jekyll-avatar` (optional)
+* Gist support via `jekyll-gist` (optional)
 
 ## Documentation
+Hydejack is well documented. You can read the docs [on the Jekyll site][docs], or [on GitHub][wiki], or [download the PDF][pdf].
 
-For more details on usage, please refer to the tutorial on the [demo website](https://cotes2020.github.io/chirpy-demo/) or [wiki](https://github.com/cotes2020/jekyll-theme-chirpy/wiki). Note that the tutorial is based on the [latest release](https://github.com/cotes2020/jekyll-theme-chirpy/releases/latest), and the features of the default branch are usually ahead of the documentation.
+## Download
+There are two versions of **Hydejack**: The *free version* includes basic blogging functionality,
+as did previous versions of the theme.
+The *PRO version* includes additional features for professionals:
+A [portfolio], a [resume] layout and a [welcome] page to feature your favorite projects and posts.
 
-## Contributing
+This table details what is and isn't included in each respective version.
 
-Welcome to report bugs, improve code quality or submit a new feature. For more information, see [contributing guidelines](.github/CONTRIBUTING.md).
+|                                     | Free                                   | PRO                                          |
+|:------------------------------------|:--------------------------------------:|:--------------------------------------------:|
+| Blog                                | &#x2714;                               | &#x2714;                                     |
+| [Features][feat]                    | &#x2714;                               | &#x2714;                                     |
+| [Portfolio] Layout                  |                                        | &#x2714;                                     |
+| [Resume] Layout                     |                                        | &#x2714;                                     |
+| [Welcome] Layout                    |                                        | &#x2714;                                     |
+| [Newsletter Box][news]              |                                        | &#x2714;                                     |
+| [Custom Forms][forms]               |                                        | &#x2714;                                     |
+| No Hydejack Branding                |                                        | &#x2714;                                     |
+| License                             | [GPL-3.0][license]                     | [PRO]                                        |
+| Source                              | [GitHub][src]                          | Included                                     |
+| Support[^1]                         | No                                     | No                                           |
+| Price                               | Free                                   | $29                                          |
+|                                     | [**Download**][kit]                    | [**Buy Now - $29**][buy] [^2]                |
+{:.stretch-table}
 
-## Credits
+[^1]: You MAY open an issue on GitHub, but no response and/or fix is guaranteed.
+      You understand that using Jekyll requires technical know-how, and is NOT comparable to Wordpress in terms of usability.
+      Please use the free version to confirm that Hydejack works for you.
+      For more, see the [PRO] license.
 
-This theme is mainly built with [Jekyll](https://jekyllrb.com/) ecosystem, [Bootstrap](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/) and some other wonderful tools (their copyright information can be found in the relevant files). The avatar and favicon design come from [Clipart Max](https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/).
+[^2]: Transactions secured by [Stripe](https://stripe.com). Downloads handled by [Simple Goods](https://simplegoods.co/).  
 
-:tada: Thanks to all the volunteers who contributed to this project, their GitHub IDs are on [this list](https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors). Also, I won't forget those guys who submitted the issues or unmerged PR because they reported bugs, shared ideas, or inspired me to write more readable documentation.
+[^3]: Actual page load speed depends on your hosting provider, resolution of embedded images and usage of 3rd party plugins.  
 
-Last but not least, thank [JetBrains][jb] for providing the OSS development license.
+~~~
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+~~~
 
-## Sponsoring
+[blog]: https://qwtel.com/hydejack/blog/
+[portfolio]: https://qwtel.com/hydejack/variations/
+[resume]: https://qwtel.com/hydejack/resume/
+[download]: https://qwtel.com/download/
+[welcome]: https://qwtel.com/hydejack/
+[forms]: https://qwtel.com/hydejack/forms-by-example/
 
-If you like it, please consider sponsoring me. It will help me to maintain this project better and I would be very grateful!
+[feat]: https://qwtel.com/hydejack/#features
+[news]: https://qwtel.com/hydejack/#newsletter-subscription-box
+[syntax]: https://qwtel.com/hydejack/#syntax-highlighting
+[latex]: https://qwtel.com/hydejack/#latex-math-blocks
 
-[![Ko-fi](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-ff5f5f?logo=ko-fi&logoColor=white)](https://ko-fi.com/coteschung)
-[![Wechat Pay](https://img.shields.io/badge/-Tip%20Me%20on%20WeChat-brightgreen?logo=wechat&logoColor=white)][cn-donation]
-[![Alipay](https://img.shields.io/badge/-Tip%20Me%20on%20Alipay-blue?logo=alipay&logoColor=white)][cn-donation]
+[license]: LICENSE.md
+[pro]: licenses/PRO.md
+[docs]: docs/7.5.2/index.md
 
-## License
+[kit]: https://github.com/qwtel/hydejack-starter-kit/archive/v7.5.2.zip
+[src]: https://github.com/qwtel/hydejack
+[git]: https://github.com/qwtel/hydejack-starter-kit
+[gem]: https://rubygems.org/gems/jekyll-theme-hydejack
+[buy]: https://app.simplegoods.co/i/AQTTVBOE
 
-This work is published under [MIT](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE) License.
+[gpss]: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fqwtel.com%2Fhydejack%2F
+[wiki]: https://github.com/qwtel/hydejack/blob/master/docs/7.5.2/index.md
+[pdf]: https://github.com/qwtel/hydejack/releases/download/v7.5.2/Documentation._.Hydejack.pdf
+[hy-push-state]: https://qwtel.com/hy-push-state/
+[hy-drawer]: https://qwtel.com/hy-drawer/
+[rouge]: http://rouge.jneen.net
+[katex]: https://khan.github.io/KaTeX/
+[tinyletter]: https://tinyletter.com/
 
-<!-- ReadMe links -->
-
-[jb]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
-[cn-donation]: https://sponsor.cotes.page/
+*[FLIP]: First-Last-Invert-Play. A coding technique to achieve performant page transition animations.
