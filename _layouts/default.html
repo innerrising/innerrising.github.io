@@ -1,61 +1,71 @@
 ---
-# Copyright (c) 2017 Florian Klampfer <https://qwtel.com/>
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
-layout: base
+layout: compress
+# Default layout
 ---
 
-{% assign strings = site.data.strings %}
+<!DOCTYPE html>
 
-<article class="page" role="article">
-  <header>
-    <h1 class="page-title">{{ page.title | default:strings.home | default:"Home" }}</h1>
-    {% include message.html text=page.description hide=page.hide_description %}
-  </header>
+{% include assets-origin.html %}
 
-  {{ content }}
-
-  <hr class="dingbat"/>
-
-  {% if site.posts.size > 0 %}
-    <h2 class="hr">{{ strings.posts | default:"Posts" }}</h2>
-    <ul class="related-posts">
-      {% for post in site.posts limit:5 %}
-        {% include post-list-item.html post=post %}
-      {% endfor %}
-    </ul>
+{% capture prefer_mode %}
+  {% if site.theme_mode %}
+    data-mode="{{ site.theme_mode }}"
   {% endif %}
+{% endcapture %}
 
-  {% assign pages = site.html_pages | where:"layout","page" | where_exp:"page","page.sitemap != false" %}
-  {% if pages.size > 0 %}
-    <h2 class="hr">{{ strings.pages | default:"Pages" }}</h2>
-    <ul class="related-posts">
-      {% for page in pages limit:5 %}
-        {% if page.layout == 'page' %}
-          <li class="h4">
-            <a href="{{ page.url | relative_url }}" class="flip-title">
-              <span>{{ page.title }}</span>
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  {% endif %}
-</article>
+<!-- `site.alt_lang` can specify a language different from the UI -->
+<html lang="{{ site.alt_lang | default: site.lang }}"{{ prefer_mode }}>
+
+  {% include head.html %}
+
+  <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
+
+    {% include sidebar.html %}
+
+    {% include topbar.html %}
+
+    <div id="main-wrapper" class="d-flex justify-content-center">
+      <div id="main" class="container pl-xl-4 pr-xl-4">
+        {{ content }}
+      </div>
+
+      {% include search-results.html %}
+
+    </div> <!-- #main-wrapper -->
+
+    {% include footer.html %}
+
+    {% if page.mermaid %}
+      {% include mermaid.html %}
+    {% endif %}
+
+    <div id="mask"></div>
+
+    <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    {% if site.pwa.enabled %}
+      <div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+        data-animation="true" data-autohide="false">
+        <div class="toast-header">
+          <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body text-center pt-0">
+          <p class="pl-2 pr-2 mb-3">{{ site.data.locales[site.lang].notification.update_found }}</p>
+          <button type="button" class="btn btn-primary" aria-label="Update">
+            {{ site.data.locales[site.lang].notification.update }}
+          </button>
+        </div>
+      </div>
+    {% endif %}
+
+    {% include search-loader.html %}
+
+    {% include js-selector.html %}
+
+  </body>
+
+</html>
