@@ -4,7 +4,7 @@ comments: true
 title:  "SQL가이드 요약: 과목I 데이터 모델링의 이해 - 1장"
 date:   2022-01-19 00:15:00 -0000
 categories: SQLD
-tags: ORACLE SQLSERVER 
+tags: Oracle Mssql 
 toc: true
 ---
 ## 1장 데이터 모델링의 이해

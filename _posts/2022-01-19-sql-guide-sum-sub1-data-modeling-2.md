@@ -4,7 +4,7 @@ comments: true
 title:  "SQL가이드 요약: 과목I 데이터 모델링의 이해 - 2장"
 date:   2022-01-19 01:03:00 -0000
 categories: SQLD
-tags: ORACLE SQLSERVER 
+tags: Oracle Mssql 
 --- 
 
 ## 2장 데이터 모델과 성능
@@ -20,7 +20,7 @@ tags: ORACLE SQLSERVER
 |홍길동|국어, 영어|
 |임꺽정|영어|
 
-<center>▼</center> 
+<center>▼</center>
 
 |이름|과목|
 |:---:|:---:|
