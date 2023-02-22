@@ -43,7 +43,7 @@ html {
 .highlighter-rouge {
   @extend %code-snippet-bg;
   @extend %rounded;
-  
+
   color: var(--highlighter-rouge-color);
   margin-top: 0.5rem;
   margin-bottom: 1.2em; /* Override BS Inline-code style */
@@ -66,7 +66,6 @@ html {
     font-size: $code-font-size;
     line-height: 1.4rem;
     word-wrap: normal; /* Fixed Safari overflow-x */
-    white-space:normal; //스크롤바 없애기
 
     /* set the dollar sign to non-selectable */
     >.gp:first-child {
@@ -104,7 +103,7 @@ code {
     padding: 3px 5px;
     word-break: break-word;
     border-radius: 4px;
-    background-color: var(--inline-code-bg); 
+    background-color: var(--inline-code-bg);
   }
 
   &.filepath {

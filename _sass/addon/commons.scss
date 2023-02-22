@@ -693,9 +693,7 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  //background: var(--sidebar-bg);
-
-  background: url('/assets/img/bg.jpg');
+  background: var(--sidebar-bg);
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
@@ -756,15 +754,13 @@ $sidebar-display: "sidebar-display";
       font-weight: 900;
       font-size: 1.5rem;
       letter-spacing: 0.5px;
-      //color: rgba(134, 133, 133, 0.99);
-      color: #fff;
+      color: rgba(134, 133, 133, 0.99);
     }
   }
 
   .site-subtitle {
     font-size: 95%;
-    //color: var(--sidebar-muted-color);
-    color: #fff;
+    color: var(--sidebar-muted-color);
     line-height: 1.25rem;
     word-spacing: 1px;
     margin: 0.2rem 1.5rem 0.5rem 1.5rem;
@@ -790,14 +786,12 @@ $sidebar-display: "sidebar-display";
 
     &.active {
       .nav-link {
-        //color: var(--sidebar-active-color);
-        color: #fff;
+        color: var(--sidebar-active-color);
       }
     }
 
     &:not(.active) > a {
-      @extend %clickable-transition; 
-      color:rgba(210, 215, 217, 0.7);
+      @extend %clickable-transition;
     }
   }
 
@@ -1453,7 +1447,7 @@ $sidebar-display: "sidebar-display";
   }
 
   div.post-content .table-wrapper > table {
-    min-width: 100%;
+    min-width: 70%;
   }
 
   /* button 'back-to-Top' position */
@@ -1620,7 +1614,7 @@ $sidebar-display: "sidebar-display";
   }
 
   #sidebar {
-    width: $sidebar-width-large; 
+    width: $sidebar-width-large;
 
     .profile-wrapper {
       margin-top: 4rem;
@@ -1631,7 +1625,7 @@ $sidebar-display: "sidebar-display";
       }
 
       %profile-ml {
-        margin-left: 4.5rem; 
+        margin-left: 4.5rem;
       }
 
       #avatar {
@@ -1712,8 +1706,7 @@ $sidebar-display: "sidebar-display";
       }
 
       i {
-        //background-color: var(--sidebar-btn-bg);
-        background-color: rgb(117,116,116,0.2);
+        background-color: var(--sidebar-btn-bg);
         font-size: 1rem;
         width: $icon-block-size;
         height: $icon-block-size;
