@@ -16,7 +16,7 @@
 
 </div>
 
-## Features 
+## Features
 
 - Dark/Light Theme Mode
 - Localized UI language
