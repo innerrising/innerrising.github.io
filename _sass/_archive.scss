@@ -31,6 +31,10 @@
   time {
     font-family: var(--code-font);
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .back-to-top {
